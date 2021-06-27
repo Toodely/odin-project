@@ -71,6 +71,10 @@ footer {
     align-items: center;
 }
 
+#top-footer {
+    border-bottom: 1px solid #dadce0;
+}
+
 #footer-wrapper {
     background-color: #f2f2f2;
     display: grid;
@@ -96,9 +100,13 @@ footer {
     background-color: #f2f2f2;
     list-style-type: none;
     margin: 0;
-    padding: 15px;
+    padding: 10px 20px 10px 20px;
     overflow: hidden;
   }
+
+.footer > li {
+    padding: 8px;
+}
 
 .footer > li > a {
     text-decoration: none;
@@ -106,17 +114,21 @@ footer {
 
 .footer-left {
     float: left;
-    display: blok;
-    padding: 8px;
+    display: block;
+
 }
 
 .footer-center {
     display: block;
-    
+
+}
+
+#carbon {
+    height: 14px;
 }
 
 .footer-right {
     float: right;
     display: block;
-    padding: 8px;
+
 }
