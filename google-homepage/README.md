@@ -1,5 +1,5 @@
 
-Finished: https://toodely.github.io/toodely-odin-project/google-homepage/index.html
+Finished: https://toodely.github.io/odin-project/google-homepage/index.html
 
 Overall happy with how this looks, the CSS is a mess as I mostly avoided using inline styling to get more used to working on two seperate files, the html and stylesheet at once.
 
