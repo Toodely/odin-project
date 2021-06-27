@@ -1,11 +1,6 @@
-In this project I will attempt to replicate google's homepage in appearance as closely as I possibly can.
 
-Skills that will be useful:
-    Two ways to move a div around on the page
-    Stick a div onto the bottom or top of the page
-    Identify the background color of an existing webpage
-    Grab the URL for an image from an existing webpage
-    Center an element horizontally
-    Identify three ways you can include your CSS styles in a page
-    Understand how to use classes and ids to target CSS at specific elements on the page
-    Build a very basic form (even if it doesn’t “go” anywhere)
+Finished: https://toodely.github.io/google-homepage/
+
+Overall happy with how this looks, the CSS is a mess as I mostly avoided using inline styling to get more used to working on two seperate files, the html and stylesheet at once.
+
+On most desktop resolutions it should be close to enough to fool at least appearance wise in my opinion, but obviously very little functionality. Though I did add hover functions to the main search buttons.
