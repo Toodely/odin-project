@@ -6,10 +6,41 @@
 </head>
 <body>
   <script>
-    max = 57
-    actual = max - 13
-    percentage = actual / max
-    console.log("Hello, World!")
+
+   function add7(number) {
+     console.log (number + 7)
+   }
+   
+
+   function multiply(number1, number2) {
+     console.log(number1 * number2);
+   }
+
+
+   function capitalize(string = prompt("Enter text:")) {
+
+    stringupper = string.charAt(0).toUpperCase();
+    
+    stringlower = string.slice(1).toLowerCase();
+
+    stringcombined = stringupper+stringlower;
+
+    console.log(stringcombined);
+   }
+
+
+   function lastletter(string = prompt("Enter text:")) {
+
+    stringlength = string.length;
+
+    endletter = stringlength - 1;
+
+    findletter = string.charAt(endletter);
+
+    console.log(findletter);
+
+   }
+
   </script>
 </body>
 </html>
