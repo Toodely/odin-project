@@ -1,5 +1,7 @@
 function computerPlay() {
-    let hand = ["Rock", "Paper", "Scissors"]
-    let randomhand = Math.floor(Math.random() * hand.length);
-    console.log(hand[randomhand])
+    let computerHand = ["Rock", "Paper", "Scissors"]
+    let computerRandomHand = Math.floor(Math.random() * computerHand.length);
+    return(computerHand[computerRandomHand]);
 }
+
+let computerChoice = computerPlay();
