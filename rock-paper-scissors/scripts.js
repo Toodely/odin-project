@@ -1,5 +1,5 @@
 
-for (roundNo = 0; roundNo < 5; roundNo ++) {
+for (roundNo = 1; roundNo < 6; roundNo ++) {
 
     function computerPlay() {
         let computerHand = ["Rock", "Paper", "Scissors"]
@@ -9,9 +9,9 @@ for (roundNo = 0; roundNo < 5; roundNo ++) {
 
     const computerChoice = computerPlay();
         
-    const playerChoice = prompt("Please enter Rock, Paper or Scissors.");
+    const playerChoice = prompt("It's round "+ roundNo + ". " + "Please enter Rock, Paper or Scissors.");
 
-        if (computerChoice == "Rock" && playerChoice == "Rock" ||
+    if (computerChoice == "Rock" && playerChoice == "Rock" ||
         computerChoice == "Paper" && playerChoice == "Paper" ||
         computerChoice == "Scissors" && playerChoice == "Scissors") {
             alert("You chose " + playerChoice + " and the computer chose " + computerChoice + ". It's a draw!")
