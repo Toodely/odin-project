@@ -1,3 +1,6 @@
+let playerScore = 0;
+let computerScore = 0;
+let draws = 0;
 
 for (roundNo = 1; roundNo < 6; roundNo ++) {
 
@@ -15,18 +18,25 @@ for (roundNo = 1; roundNo < 6; roundNo ++) {
         computerChoice == "Paper" && playerChoice == "Paper" ||
         computerChoice == "Scissors" && playerChoice == "Scissors") {
             alert("You chose " + playerChoice + " and the computer chose " + computerChoice + ". It's a draw!")
+            draws ++;
         } 
     else if 
         (computerChoice == "Rock" && playerChoice == "Scissors" ||
         computerChoice == "Paper" && playerChoice == "Rock" ||
         computerChoice == "Scissors" && playerChoice == "Paper") {
             alert("You chose " + playerChoice + " and the computer chose " + computerChoice + ". The computer wins!")
+            computerScore ++;
         }
     else if 
         (computerChoice == "Rock" && playerChoice == "Paper" ||
         computerChoice == "Paper" && playerChoice == "Scissors" ||
         computerChoice == "Scissors" && playerChoice == "Rock") {
             alert("You chose " + playerChoice + " and the computer chose " + computerChoice + ". You win!")
+            playerScore ++;
+        }
+
+    if (roundNo == 5) {
+            alert("Player wins: " + playerScore + " Computer wins: " + computerScore + " Draws: " + draws);
         }
 
 }
