@@ -12,10 +12,18 @@ function playGame() {
             return(computerHand[computerRandomHand]);
         }
 
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
         const computerChoice = computerPlay();
             
-        const playerChoice = prompt("It's round "+ roundNo + ". " + "Please enter Rock, Paper or Scissors.");
+        let playerChoice = prompt("It's round "+ roundNo + ". " + "Please enter Rock, Paper or Scissors.");
 
+        playerChoice = playerChoice.toLowerCase();
+        playerChoice = capitalizeFirstLetter(playerChoice);
+
+    
         if (computerChoice == "Rock" && playerChoice == "Rock" ||
             computerChoice == "Paper" && playerChoice == "Paper" ||
             computerChoice == "Scissors" && playerChoice == "Scissors") {
